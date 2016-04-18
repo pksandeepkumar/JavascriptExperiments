@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: table;
+        }
+
+        .my-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            horizontal-align: middle;
+        }
+        </style>
+
+<div class="my-block">
+
+<h1><p id="demo" ></p></h1>
+
+</div>
+
+<script>
+	var timerCount = 10;
+	var myVar = setInterval(myTimer, 1000);
+	
+
+	function myTimer() {
+		var d = new Date();
+		if( timerCount != 0 ) {
+		 
+			document.getElementById("demo").innerHTML = timerCount;
+			timerCount = timerCount - 1;
+		} else {
+			document.getElementById("demo").innerHTML = "Happy New Year!!!!!";
+		}
+			
+	} 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Can Change Images</h1>
+
+<img id="myImage" onclick="changeImage()" src="http://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+<br>
+<img id="myImage2" onclick="changeImage()" src="http://www.w3schools.com/js/pic_bulbon.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    var image2 = document.getElementById('myImage2');
+    if (image.src.match("bulbon")) {
+        image.src = "http://www.w3schools.com/js/pic_bulboff.gif";
+        image2.src = "http://www.w3schools.com/js/pic_bulbon.gif";
+        
+    } else {
+        image.src = "http://www.w3schools.com/js/pic_bulbon.gif";
+        image2.src = "http://www.w3schools.com/js/pic_bulboff.gif";
+    }
+}
+</script>
+
+</body>
+</html>
